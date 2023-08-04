@@ -1,10 +1,103 @@
-.playlistimage {
-    width: 100px; /* Set the desired width for the playlist image */
-    height: auto; /* Maintain the aspect ratio */
+/* .playlistimage {
+    width: 100px; 
+    height: auto; 
   }
   
-  /* Optional: Add some spacing between the playlist items */
   .playlistitem {
     margin-bottom: 10px;
+  } */
+
+  .background{
+    background-color: #121212;
+    
   }
+
+  .title{
+    font-family: "Inter-Variable", sans-serif;
+    color: lightgrey;
+    padding-top: 20px;
+    padding-left: 100px;
+    margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-bottom: 30px;
+  padding-top:40px;
+  }
+
+.playlistsContainer {
+  margin-left: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+
+}
+
+.playlistItem {
+  width: 25%; /* Each item takes 25% of the container's width to have four items in a row */
+  background-color: #181818;
+  height: 470px;
+  width: 300px;
+  border-radius: 5px;
+  text-align: center;
+  position: relative; 
+
+}
+
+.playlistItem:hover{
+  background-color: #323232;
+}
+
+.playlistItem:last-child{
+  margin-bottom: 50px;
+}
+.playlistImage {
+  width: 250px;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 5px;
   
+  
+}
+
+.playlistTitle {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 8px;
+  text-align: left;
+  margin-left: 25px;
+  color: lightgrey;
+  text-decoration: none;
+  font-family: "Inter-Variable", sans-serif;
+
+}
+
+.convertButton {
+  margin-top: 100px;
+  background-color: #1bd760;
+  color: #323232;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 4px;
+  width: 250px;
+  font-family: "Inter-Variable", sans-serif;
+  font-weight: 600;
+  border-radius: 50%; /* Set border-radius to 50% for a circular shape */
+  width: 100px; /* Adjust the width and height to your desired size */
+  height: 100px;
+  position: absolute; /* Set the position to absolute */
+  bottom: 25px; /* Distance from the bottom */
+  right: 25px; /* Distance from the right */
+
+}
+
+.convertButton:hover {
+  background-color: #0056b3;
+}
+
+.image{
+  width: 70px;
+  height:70px;
+}

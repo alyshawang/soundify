@@ -1,0 +1,26 @@
+.container{
+    background-color: #121212;
+    height: 100dvh;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header{
+    margin-top: 0px;
+    font-family: "Inter-Variable", sans-serif;
+    color: lightgray;
+    font-size:36px;
+}
+
+.button{
+    font-family: "Inter-Variable", sans-serif;
+    padding: 12px 24px;
+    border-radius: 20px;
+    font-size: 18px;
+  border: none;
+  background-color: #1bd760;
+
+
+}

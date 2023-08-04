@@ -58,6 +58,8 @@ import { fetchUserPlaylists } from '../spotifyAPI'; // Import the function
 import PlaylistConversionButton from '../playlist'; // Replace the path with the actual path to your component
 import styles from "./Home.module.css";
 import axios from 'axios';
+import playlistImage from "../../public/Images/image2.svg"; // Replace 'playlist-icon.png' with the actual image file name
+import Image from 'next/image'
 
 function extractAccessToken() {
   const storedAccessToken = localStorage.getItem('accessToken');
@@ -96,25 +98,55 @@ export default function Home() {
   };
 
   return (
-    <div>
-      {/* Display the playlists */}
-      <h2>Your Playlists</h2>
-      <ul>
+    <div className={styles.background}>
+      <style jsx global>{`
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+    `}</style>
+      <h2 className = {styles.title}>Your Playlists</h2>
+      <div className={styles.playlistsContainer}>
         {playlists.map((playlist) => (
-          <li key={playlist.id} className={styles.playlistitem}>
+          <div key={playlist.id} className={styles.playlistItem}>
             {playlist.image && (
               <a href={`https://open.spotify.com/playlist/${playlist.id}`} target="_blank" rel="noopener noreferrer">
-                <img src={playlist.image} alt={playlist.name} className={styles.playlistimage} />
+                <img src={playlist.image} alt={playlist.name} className={styles.playlistImage} />
               </a>
             )}
-            <a href={`https://open.spotify.com/playlist/${playlist.id}`} target="_blank" rel="noopener noreferrer">
+            <a href={`https://open.spotify.com/playlist/${playlist.id}`} target="_blank" rel="noopener noreferrer" className={styles.playlistTitle}>
               {playlist.name}
             </a>
-            <button onClick={() => handleConvertPlaylist(playlist.id)}>Convert to YouTube Playlist</button>
-          </li>
+            <button onClick={() => handleConvertPlaylist(playlist.id)} className={styles.convertButton}>
+            <Image src={playlistImage} className={styles.image} />
+              
+            </button>
+          </div>
         ))}
-      </ul>
-      {/* <PlaylistConversionButton /> */}
+      </div>
     </div>
   );
-}
+            }  
+//   return (
+//     <div>
+//       {/* Display the playlists */}
+//       <h2>Your Playlists</h2>
+//       <ul>
+//         {playlists.map((playlist) => (
+//           <li key={playlist.id} className={styles.playlistitem}>
+//             {playlist.image && (
+//               <a href={`https://open.spotify.com/playlist/${playlist.id}`} target="_blank" rel="noopener noreferrer">
+//                 <img src={playlist.image} alt={playlist.name} className={styles.playlistimage} />
+//               </a>
+//             )}
+//             <a href={`https://open.spotify.com/playlist/${playlist.id}`} target="_blank" rel="noopener noreferrer">
+//               {playlist.name}
+//             </a>
+//             <button onClick={() => handleConvertPlaylist(playlist.id)}>Convert to YouTube Playlist</button>
+//           </li>
+//         ))}
+//       </ul>
+//       {/* <PlaylistConversionButton /> */}
+//     </div>
+//   );
+// }
