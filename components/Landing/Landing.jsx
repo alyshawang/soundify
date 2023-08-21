@@ -11,7 +11,7 @@ export default function Landing() {
       }
   
     `}</style>
-        <h1 className={styles.header}>Spotify to Youtube. Made Easy.</h1>
+        <h1 className={styles.header}>Convert Spotify to Youtube.</h1>
         <button id="loginButton" className = {styles.button}>Log in with Spotify</button> 
 
     </div>
