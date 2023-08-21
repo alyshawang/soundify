@@ -6,7 +6,7 @@ export default function Home() {
   return (
    <>
    <Head>
-    <title>Soundify</title>
+    <title></title>
    </Head>
     <Landing />
    </>

@@ -7,38 +7,35 @@
     margin-bottom: 10px;
   } */
 
-  @font-face {
-    font-family: "Inter-Variable";
-    src: url("../../public/Inter-VariableFont_slnt,wght.ttf") format("truetype");
-    font-weight: 300 400 500 600 700 800 900;
-    font-display: swap;
-    font-style: normal;
-  }
+@font-face {
+  font-family: "Inter-Variable";
+  src: url("../../public/Inter-VariableFont_slnt,wght.ttf") format("truetype");
+  font-weight: 300 400 500 600 700 800 900;
+  font-display: swap;
+  font-style: normal;
+}
 
-  .background{
-    background-color: #121212;
-    
-  }
+.background {
+  background-color: #121212;
+}
 
-  .title{
-    font-family: "Inter-Variable";
-    color: lightgrey;
-    padding-top: 20px;
-    padding-left: 100px;
-    margin-block-start: 0em;
+.title {
+  font-family: "Inter-Variable";
+  color: lightgrey;
+  padding-top: 20px;
+  padding-left: 100px;
+  margin-block-start: 0em;
   margin-block-end: 0em;
   margin-bottom: 30px;
-  padding-top:40px;
+  padding-top: 40px;
   font-size: 30px;
-  }
+}
 
 .playlistsContainer {
   margin-left: 100px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-
-
 }
 
 .playlistItem {
@@ -48,15 +45,14 @@
   width: 300px;
   border-radius: 5px;
   text-align: center;
-  position: relative; 
-
+  position: relative;
 }
 
-.playlistItem:hover{
+.playlistItem:hover {
   background-color: #323232;
 }
 
-.playlistItem:last-child{
+.playlistItem:last-child {
   margin-bottom: 50px;
 }
 .playlistImage {
@@ -64,8 +60,6 @@
   height: auto;
   margin-top: 20px;
   border-radius: 5px;
-  
-  
 }
 
 .playlistTitle {
@@ -78,7 +72,6 @@
   color: lightgrey;
   text-decoration: none;
   font-family: "Inter-Variable";
-
 }
 
 .convertButton {
@@ -93,19 +86,19 @@
   width: 250px;
   font-family: "Inter-Variable", sans-serif;
   font-weight: 600;
-  border-radius: 50%; 
+  border-radius: 50%;
   width: 100px;
   height: 100px;
   position: absolute;
   bottom: 25px;
-  right: 25px; 
+  right: 25px;
 }
 
 .convertButton:hover {
   background-color: #0056b3;
 }
 
-.image{
+.image {
   width: 70px;
-  height:70px;
+  height: 70px;
 }
